@@ -1,6 +1,6 @@
-import buildSchema from 'graphql'
+const { buildSchema } = require("graphql")
 
-export default buildSchema(`
+module.exports = buildSchema(`
   type Article {
     _id: ID!
     title: String!

@@ -1,6 +1,6 @@
-import Article from "../../models/article";
+const Article = require("../../models/article")
 
-export default = {
+module.exports = {
   articles: async () => {
     try {
       const articlesFetched = await Article.find()
